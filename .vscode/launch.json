@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "name": "Python Experimental: Attach (working)",
+            "type": "pythonExperimental",
+            "request": "attach",
+            "port": 4000,
+            "host": "localhost",
+            "pathMappings": [{
+                "localRoot": "${workspaceFolder}", // Local root  (where source and debugger running)
+                "remoteRoot": "/app" // Remote root (where remote code is running)
+            }]
+        },
+        {
+            "name": "Python Experimental: Attach (sub folder) (working)",
+            "type": "pythonExperimental",
+            "request": "attach",
+            "port": 4000,
+            "host": "localhost",
+            "pathMappings": [{
+                "localRoot": "${workspaceFolder}\\test", // Local root  (where source and debugger running)
+                "remoteRoot": "/app" // Remote root (where remote code is running)
+            }]
+        },
+        {
+            "name": "Python Experimental: Attach (sub folder) (not working)",
+            "type": "pythonExperimental",
+            "request": "attach",
+            "port": 4000,
+            "host": "localhost",
+            "pathMappings": [{
+                "localRoot": "${workspaceFolder}/test", // Local root  (where source and debugger running)
+                "remoteRoot": "/app" // Remote root (where remote code is running)
+            }]
+        }
+    ]
+}
